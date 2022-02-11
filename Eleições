@@ -11,10 +11,10 @@ int main(){
 	while(opcao!=3)
 	{
 		system("cls");
-		printf("	ELEIÇÕES\n");
+		printf("	ELEIÃ‡Ã•ES\n");
 		printf("\n");
-		printf("1 - Votar\n2 - Apuração dos votos\n3 - Sair.\n");
-		printf("Digite o número da opção desejada: ");
+		printf("1 - Votar\n2 - ApuraÃ§Ã£o dos votos\n3 - Sair.\n");
+		printf("Digite o nÃºmero da opÃ§Ã£o desejada: ");
 		scanf("%d", &opcao);
 	
 	
@@ -29,7 +29,7 @@ int main(){
 			printf("222 - Vereador Maria da Pamonha\n");
 			printf("333 - Vereador Ze da Farmacia\n");
 			printf("444 - Voto Nulo\n");
-			printf("Digite o número correspondente ao seu candidato: ");
+			printf("Digite o nÃºmero correspondente ao seu candidato: ");
 			scanf("%d", &opcao);
 			fflush(stdin);
 		
@@ -56,7 +56,7 @@ int main(){
 			printf("11 - Prefeito Dr. Zureta\n");
 			printf("22 - Prefeito Senhor Gomes\n");
 			printf("44 - Voto Nulo\n");
-			printf("Digite o número correspondente ao seu candidato: ");
+			printf("Digite o nÃºmero correspondente ao seu candidato: ");
 			scanf("%d", &opcao);
 			fflush(stdin);
 			
@@ -81,7 +81,7 @@ int main(){
 		}
 		else if(opcao==2)
 		{
-			printf("				APURAÇÃO DOS VOTOS\n");
+			printf("				APURAÃ‡ÃƒO DOS VOTOS\n");
 			printf("\n");
 			printf("	VEREADORES			|	SALDO DE VOTOS\n");
 			printf("\n");
@@ -89,7 +89,7 @@ int main(){
 			printf("222 - Vereador Maria da Pamonha		|		%d\n", v222);
 			printf("333 - Vereador Ze da Farmacia		|		%d\n", v333);
 			printf("444 - Voto Nulo				|		%d\n", v444);
-			printf("##  - Votos Inválidos			|		%d\n", vInvalido);
+			printf("##  - Votos InvÃ¡lidos			|		%d\n", vInvalido);
 			printf("	Total de votos			|		%d\n", totalvereador);
 		
 			printf("\n");
@@ -100,7 +100,7 @@ int main(){
 			printf("11 - Prefeito Dr. Zureta	|		%d\n", p11);
 			printf("22 - Prefeito Senhor Gomes	|		%d\n", p22);
 			printf("44 - Voto Nulo			|		%d\n", p44);
-			printf("## - Votos Inválidos		|		%d\n", pInvalido);
+			printf("## - Votos InvÃ¡lidos		|		%d\n", pInvalido);
 			printf("	Total de votos		|		%d\n", totalprefeito);
 			system("pause");
 		}
