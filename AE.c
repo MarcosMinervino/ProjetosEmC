@@ -1,0 +1,110 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+int main(){
+	
+	setlocale(LC_ALL,"Portuguese");
+	
+	int opcao=0, totalvereador=0, totalprefeito=0, v111=0, v222=0, v333=0, v444=0, p11=0, p22=0, p44=0, vInvalido=0, pInvalido=0, i;
+	while(opcao!=3)
+	{
+		system("cls");
+		printf("	ELEIÇÕES\n");
+		printf("\n");
+		printf("1 - Votar\n2 - Apuração dos votos\n3 - Sair.\n");
+		printf("Digite o número da opção desejada: ");
+		scanf("%d", &opcao);
+	
+	
+		system("cls");
+		
+		if(opcao==1)
+		{
+			system("cls");
+			printf("	VEREADORES\n");
+			printf("\n");
+			printf("111 - Vereador Joao do Frete\n");
+			printf("222 - Vereador Maria da Pamonha\n");
+			printf("333 - Vereador Ze da Farmacia\n");
+			printf("444 - Voto Nulo\n");
+			printf("Digite o número correspondente ao seu candidato: ");
+			scanf("%d", &opcao);
+			fflush(stdin);
+		
+			switch(opcao)
+			{
+				case 111: v111 = v111 + 1;			
+					break;
+				case 222: v222 = v222 + 1;				
+					break;
+				case 333: v333 = v333 + 1;				
+					break;
+				case 444: v444 = v444 + 1;				
+					break;
+				default: vInvalido = vInvalido + 1;			
+					break;
+			}
+			totalvereador = v111 + v222 + v333 + v444;
+		
+			for (i=0; i<10; i++){
+				printf("Voto confirmado!\n");
+				system("cls");}
+		
+			printf("	PREFEITOS\n");
+			printf("11 - Prefeito Dr. Zureta\n");
+			printf("22 - Prefeito Senhor Gomes\n");
+			printf("44 - Voto Nulo\n");
+			printf("Digite o número correspondente ao seu candidato: ");
+			scanf("%d", &opcao);
+			fflush(stdin);
+			
+			switch(opcao)
+			{
+				case 11: p11 = p11 + 1;			
+					break;
+				case 22: p22 = p22 + 1;				
+					break;
+				case 44: p44 = p44 + 1;				
+					break;
+				default: pInvalido = pInvalido + 1;				
+					break;
+			}
+		
+			totalprefeito = (p11 + p22 + p44);
+			
+			for (i=0; i<10; i++){
+				printf("Voto confirmado!\n");
+				system("cls");}
+			
+		}
+		else if(opcao==2)
+		{
+			printf("				APURAÇÃO DOS VOTOS\n");
+			printf("\n");
+			printf("	VEREADORES			|	SALDO DE VOTOS\n");
+			printf("\n");
+			printf("111 - Vereador Joao do Frete		|		%d\n", v111);
+			printf("222 - Vereador Maria da Pamonha		|		%d\n", v222);
+			printf("333 - Vereador Ze da Farmacia		|		%d\n", v333);
+			printf("444 - Voto Nulo				|		%d\n", v444);
+			printf("##  - Votos Inválidos			|		%d\n", vInvalido);
+			printf("	Total de votos			|		%d\n", totalvereador);
+		
+			printf("\n");
+			printf("\n");
+		
+			printf("	PREFEITOS		|	SALDO DE VOTOS\n");
+			printf("\n");
+			printf("11 - Prefeito Dr. Zureta	|		%d\n", p11);
+			printf("22 - Prefeito Senhor Gomes	|		%d\n", p22);
+			printf("44 - Voto Nulo			|		%d\n", p44);
+			printf("## - Votos Inválidos		|		%d\n", pInvalido);
+			printf("	Total de votos		|		%d\n", totalprefeito);
+			system("pause");
+		}
+	}
+	return (0);
+	}
+	
